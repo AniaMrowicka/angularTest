@@ -1,0 +1,6 @@
+.loginDialog {
+  display: flex;
+  flex-direction: row;
+  width: 35em;
+  align-items: center;
+}

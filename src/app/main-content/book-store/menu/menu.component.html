@@ -1,0 +1,22 @@
+<div class="myCard">
+    <button mat-button>
+      <mat-icon>menu</mat-icon>{{'Menu'}}
+    </button>
+    <table style="width:80%">
+      <colgroup>
+        <col span="1" style="width: 15%;">
+        <col span="1" style="width: 70%;">
+        <col span="1" style="width: 10%;">
+      </colgroup>
+      <tr *ngFor="let position of menu">
+        <td><button mat-fab>
+        </button></td>
+        <td>{{position.name}} <br>
+          {{position.ingredients.join(' + ')}}
+        </td>
+        <td><button mat-mini-fab (click)="addPosition(position)" [disabled]="position.selected">
+          <mat-icon>add</mat-icon>
+        </button></td>
+      </tr>
+    </table>
+</div>

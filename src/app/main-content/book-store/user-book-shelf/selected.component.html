@@ -1,0 +1,8 @@
+<h3 class="mat-h3">Selected position:</h3>
+<mat-list *ngFor="let position of selectedMenu" style=" display: flex; flex-direction: column">
+  <mat-list-item>
+    <button mat-mini-fab (click)="removeRow(position)" >
+      <mat-icon>remove</mat-icon>
+    </button>
+    {{position.name}} </mat-list-item>
+</mat-list>

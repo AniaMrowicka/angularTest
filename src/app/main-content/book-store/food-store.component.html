@@ -1,0 +1,19 @@
+<div class="appBar">
+    <div>
+      <button mat-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div>
+      <button mat-button color="primary" [routerLink]="['']">Logout
+      </button>
+    </div>
+</div>
+<div class="menuManagement" >
+  <section id="menu">
+    <app-menu></app-menu>
+  </section>
+  <section id="userBasket">
+    <app-selected></app-selected>
+  </section>
+</div>

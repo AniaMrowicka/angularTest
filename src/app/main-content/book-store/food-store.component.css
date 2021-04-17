@@ -1,0 +1,17 @@
+.appBar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.menuManagement{
+  display:flex;
+  justify-content: space-between;
+}
+#menu{
+  width: 70%;
+  border-right:  1px solid black;
+}
+#userBasket{
+  width: 30%
+}
