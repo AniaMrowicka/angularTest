@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {BehaviorSubject, Observable, Subject} from 'rxjs';
+import {Observable, Subject} from 'rxjs';
 import {Menu} from '../../../common/model/Menu';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
-  private addPosition$ = new BehaviorSubject(undefined);
-  private removePosition$ = new BehaviorSubject(undefined);
+  private addPosition$ = new Subject<Menu>();
+  private removePosition$ = new Subject<Menu>();
   constructor(private httpClient: HttpClient) {
   }
   public getMenu(): Observable<Menu[]>{
