@@ -1,0 +1,4 @@
+{
+"/api/getMenuList": "/menuList",
+"/api/selectedPosition": "/selectedPosition"
+}

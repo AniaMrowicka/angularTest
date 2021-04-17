@@ -1,0 +1,21 @@
+{
+  "menuList":[{
+    "name": "BurgerCheese",
+    "ingredients": [
+      "classic", "cheddar"
+    ]
+  },
+    {
+      "name": "Burger BBQ",
+      "ingredients": [
+        "classic", "bekon", "sos BBQ"
+      ]
+    },{
+      "name": "Pasta Gamberetti",
+      "ingredients": [
+        "krewetki", "sos", "cukinia"
+      ]
+    }
+
+  ]
+}
